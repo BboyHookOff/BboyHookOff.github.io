@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VizitOchka</title>
+</head>
+<body>
+
+    <header>
+      <nav>
+        <div class="logo">
+          Грихан Крючков
+        </div>
+        <div class="menu">
+          <ul>
+            <li>обо мне</li>
+            <li>услуги</li>
+            <li>кейсы</li>
+            <li>прайс</li>
+            <li>отзывы</li>
+            <li>контакты</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main">
+
+      <div class="title__container">
+        <h1>Привет<br>я Грихан Крючок</h1>
+        <h4>Начинающий веб-разработчик</h4>
+        <input type="submit" value="обо мне">
+        <input type="submit" value="мои работы">
+      </div>
+
+      <div class="aboutMe">
+        <h2>ОБО МНЕ<br>____</h2>
+         <!--после br это типо полосочка под заголовками -->
+        <img src="" alt="Тут должна быть моя фотка">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <input type="submit" value="скачать резюме">
+      </div>
+
+      <div class="services">
+        <h2>ЧТО Я МОГУ<br>____</h2>
+        <div class="service">
+          <img src="" alt="иконка">
+          <h4>Веб-дизайн</h4>
+          <p>описание описание описание<br>описание описание описание<br>описание описание описание<br></p>
+        </div>
+        <div class="service">
+          <img src="" alt="иконка">
+          <h4>Разработка</h4>
+          <p>описание описание описание<br>описание описание описание<br>описание описание описание<br></p>
+        </div>
+        <div class="service">
+          <img src="" alt="иконка">
+          <h4>СЕО-Оптимизация</h4>
+          <p>описание описание описание<br>описание описание описание<br>описание описание описание<br></p>
+        </div>
+        <div class="service">
+          <img src="" alt="иконка">
+          <h4>Маркетинг</h4>
+          <p>описание описание описание<br>описание описание описание<br>описание описание описание<br></p>
+        </div>
+      </div>
+
+      <div class="cases">
+        <h2>КЕЙСЫ<br>____</h2>
+        <div class="case">
+          <img id="case__screen" src="" alt="скрин сайта">
+          <div class="case__description">
+            <div class="case__description-left">
+              <h3>CLIENT:</h3>
+              <span id="CLIENT">Какая-то компания</span>
+              <h3>WEBSITE:</h3>
+              <!-- id добавляю чтобы потом через js всё это менялось при перелистывании. точно не знаю правильно это или нет, но идея есть-->
+              <span id="WEBSITE">http://www.somedomain.com</span>
+            </div>
+            <div class="case__description-right">
+              <h3>Название проекта:</h3>
+              <p id="projectName">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <input type="submit" value="VISIT LIVE SITE">
+        </div>
+      </div>
+
+      <div class="price">
+        <h2>Расчет стоимости</h2>
+        <form action="" >
+          <h3>ТИП САЙТА</h3>
+          <select class="type" name="type">
+            <option disabled selected>Выберите тип</option>
+            <option value="визитка">визитка</option>
+            <option value="портал">портал</option>
+            <option value="каталог">каталог</option>
+            <option value="магазин">магазин</option>
+            <option value="промо">промо</option>
+            <option value="корпоративный">корпоративный</option>
+          </select>
+          <h3>ДИЗАЙН</h3>
+          <select class="design" name="design" >
+            <option disabled selected>Выберите дизайн</option>
+            <option value="классика">классика</option>
+            <option value="гранж">гранж</option>
+            <option value="минимализм">минимализм</option>
+            <option value="flat дизайн">flat дизайн</option>
+            <option value="metro">metro</option>
+            <option value="кастомный">кастомный дизайн</option>
+          </select>
+          <h3>АДАПТИВНОСТЬ</h3>
+          <select class="adapt" name="adapt">
+            <option disabled selected>Выберите адаптивность</option>
+            <option value="ПК">ПК</option>
+            <option value="Мобильные устройства">Мобильные устройства</option>
+            <option value="под всё на свете">под всё на свете</option>
+          </select>
+          <div class="price__result" style="border-top: 2px solid; margin-top: 10px">
+            <div class="deadlock">
+              <div class="sroki">Сроки</div>
+              <div class="deadlock__result"><b>0</b></div>
+            </div>
+            <div class="webcost">
+              <div class="stoimost">Стоимость</div>
+              <div class="webcost__result"><b>0</b></div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="statistics">
+        <h2>НЕМНОГО СТАТИСТИКИ<br>____</h2>
+        <div class="statistic">
+          <img src="" alt="иконка">
+          <h2 class="clients"><b>0</b></h2>
+          <span>счастливых клиентов</span>
+        </div>
+        <div class="statistic">
+          <img src="" alt="иконка">
+          <h2 class="workHours"><b>МАЛО</b></h2>
+          <span>часов работы</span>
+        </div>
+        <div class="statistic">
+          <img src="" alt="иконка">
+          <h2 class="progects"><b>2</b></h2>
+          <span>проектов завершено</span>
+        </div>
+        <div class="statistic">
+          <img src="" alt="иконка">
+          <h2 class="awards"><b>-100</b></h2>
+          <span>наград получено</span>
+        </div>
+      </div>
+
+      <form class="reviews">
+        <h2>ОТЗЫВЫ<br>____</h2>
+         <!--после br это типо полосочка под заголовками -->
+        <img id="commentator__photo" src="" alt="Тут должна быть фотка коментатора">
+        <p id="comment">Всем привет, я мать Григория. Он показал мне как он создаёт файл индекс точка хтмл и я просто в шоке. Специалист каких поискать надо! Справедливо одобряю.</p>
+        <span id="commentator"><b>Екатерина,</b> родитель специалиста</span>
+        <div class="choice__comment">
+          <input type="radio" name="comm">
+          <input type="radio" name="comm">
+          <input type="radio" name="comm">
+        </div>
+      </form>
+
+      <div class="contacts">
+        <h2>МОИ КОНТАКТЫ<br>____</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="contact__info">
+          <div class="adress">
+            <img src="" alt="иконка">
+            <span>Тула</span>
+            <span>Кутузова 34</span>
+          </div>
+          <div class="mail">
+            <img src="" alt="иконка">
+            <span>kakoiTo@mail.ru</span>
+          </div>
+          <div class="adress">
+            <img src="" alt="иконка">
+            <span>+7 979 979-79-79</span>
+          </div>
+        </div>
+        <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+        <form class="gimme_a_message" action="index.html">
+          <div class="guest">
+            <input type="text" name="name" value="имя">
+            <input type="text" name="Email" value="Email">
+          </div>
+          <textarea name="message" id="readIt" rows="8" cols="80">Сообщение</textarea>
+        </form>
+        <input type="submit" name="sendIt" value="Отправить">
+        <div class="myLinks">
+          <a href="https://vk.com/im?peers=-203472929_c151_155825712_c207_181128094_260237293" target="_blank"><img src="" alt="ссылка на вк"></a>
+          <a href="#" target="_blank"><img src="" alt="ссылка на инсту"></a>
+          <a href="#" target="_blank"><img src="" alt="ссылка на что-то ещё"></a>
+        </div>
+      </div>
+
+      <div class="map">
+        <h2>----------------<br>Тут будет плагин с картой<br>----------------</h2>
+      </div>
+    </div>
+
+    <footer>
+      <span>Copyright (c) 2021 Grigory Kryuchkov a.k.a. Yung Mushy a.k.a. Hook.</span>
+    </footer>
+    
+</body>
+</html>
