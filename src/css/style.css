@@ -1,0 +1,358 @@
+body{
+  font-family: Franklin Gothic, Arial, sans-serif;
+  color: #293b4f;
+}
+nav{
+  width: 100%;
+  min-height: 60px;
+  background: #304e81;
+  padding: 0px 240px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  color: white;
+  font-size: 24px;
+  line-height: 60px;
+  float: left;
+}
+.menu{
+  float: left;
+}
+.menu li{
+  float: left;
+  line-height: 60px;
+  color: white;
+  margin-right: 35px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.logo:hover, .menu li:hover{
+  color: blanchedalmond;
+  cursor: default;
+}
+.main{
+  width: 100%;
+  height: calc(100% - 60px);
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px -7px 20px -4px rgb(34, 34, 34);
+}
+.title__container{
+  float: left;
+  margin: 230px 0px 0px 159px;
+  color: #304e81;
+  text-align: center;
+}
+.title__container h1{
+  font-size: 60px;
+  font-weight: bold;
+}
+.title__container h4{
+  margin-top: 25px;
+  font-size: 22px;
+  color: #79818d;
+}
+.title__container input{
+  color: #79818d;
+  font-size: 18px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid #79818d;
+  border-radius: 5px;
+  background-color: rgba(158, 158, 158, 0.2);
+  margin: 40px 10px 0px 10px;
+  padding: 0px 3px;
+}
+.title__container input:hover{
+  background-color: rgba(158, 158, 158, 0.7);
+}
+.aboutMe{
+  width: 100%;
+  height: 780px;
+  color: #79818d;
+  text-align: center;
+  padding: 6% 20%;
+}
+.aboutMe>h2, .services>h2, .cases>h2, .statistics>h2, .reviews>h2, .contacts>h2{
+  font-size: 28px;
+  color: black;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
+}
+.aboutMe>span, .services>span, .cases>span, .statistics>span, .reviews>span, .contacts>span{
+  display: block;
+  font-size: 28px;
+  color: #ea7700;
+  font-weight: bold;
+}
+.aboutMe img{
+  margin-top: 60px;
+  width: 215px;
+  border-radius: 50%;
+}
+.aboutMe p{
+  margin: 20px 0px;
+  font-size: 18px;
+  color: #37475a;
+}
+.aboutMe input{
+  margin-top: 10px;
+  color: #6f7180;
+  font-size: 18px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid #6f7180;
+  border-radius: 5px;
+  background-color: rgba(158, 158, 158, 0.15);
+  padding: 0px 3px;
+}
+.services{
+  height: 520px;
+  padding: 95px 15%;
+  text-align: center;
+  font-size: 16px;
+  color: #293b4f;
+  background-image: url(../img/comp_bg.jpg);
+  box-shadow: inset 0px 0px 10px 20px white;
+}
+.services_container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.service{
+  width: 215px;
+}
+.service h4{
+  color: #e97700;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 18px;
+}
+.cases{
+  text-align: center;
+  padding: 50px 15%;
+}
+.case{
+  margin-top: 28px;
+  font-size: 16px;
+}
+.case img{
+  margin: 28px 0 14px 0;
+  width: 90%;
+}
+.case__description{
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5%;
+}
+.case__description h3{
+  margin: 7px 0px;
+  font-weight: bolder;
+}
+.case__description-left{
+  width: 25%;
+  margin: -7px 60px 0px 0px;
+}
+
+.case__description-left span{
+  font-size: 16px;
+  font-weight: normal;
+  color: inherit;
+
+}
+.case__description-right{
+  width: 75%;
+}
+.case input{
+  margin: 14px 0px 0px 5%;
+  padding: 8px 20px;
+  color: white;
+  font-weight: bolder;
+  background-color: #00b6af;
+  border-radius: 7px;
+  display: block;
+  opacity: 0.8;
+}
+.case input:hover {
+  opacity: 1;
+}
+.price{
+  padding: 70px 30%;
+  text-align: center;
+  color: #102031;
+}
+.price h2{
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+.price h3{
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  text-align: left;
+}
+.price select{
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+  color: #102031;
+  background-color: #efefef;
+  margin-bottom: 20px;
+}
+.price__result{
+  border-top: 2px solid #b6b6b6;
+}
+.deadlock, .webcost{
+  color: #102031;
+  font-size: 15px;
+  padding: 14px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.statistics{
+  text-align: center;
+  padding: 100px 25%;
+  background-image: url(../img/comp2_bg.jpg);
+  background-position: bottom;
+  background-size: 100% auto;
+  box-shadow: inset 0px 0px 10px 20px white;
+}
+.statistics_container{
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+.statistic h2{
+  padding: 15px;
+  font-size: 20px;
+}
+.statistic span{
+  font-size: 16px;
+}
+.reviews{
+  padding: 70px 30%;
+  font-size: 16px;
+  text-align: center;
+  color: #293b4f;
+}
+.reviews img{
+  width: 80px;
+  margin-top: 50px;
+}
+.reviews p{
+  margin: 40px 0px 30px 0px;
+}
+.contacts{
+  text-align: center;
+  padding: 70px 25% 50px 25%;
+  font-size: 16px;
+  background-image: url(../img/comp3_bg.jpg);
+  background-size: 100%;
+  background-position: bottom;
+}
+.contacts p{
+  margin-top: 18px;
+  color: white;
+}
+.contacts a{
+  color: white;
+}
+.contact__info{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 30px;
+  color: white;
+}
+.contact__info img{
+  width: 40px;
+  margin-left: 35%;
+}
+.contact__info img, span{
+  display: block;
+}
+.contact_text{
+  margin-top: 10px;
+}
+.adress, .mail, .phone{
+  min-width: 130px;
+}
+.adress img{
+  width: 25px;
+  height: 40px;
+  margin-left: 40%;
+}
+.contacts>h2{
+  font-size: 28px;
+  color: white;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
+}
+.contacts h3{
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: white;
+}
+.contacts form{
+  text-align: left;
+}
+.guest{
+  display: flex;
+  justify-content: space-between;
+
+}
+.guest>input{
+  background-color: #efefef;
+  width: 48%;
+  height: 28px;
+  padding-left: 8px;
+  color: #6c6c6c;
+  font-size: 16px;
+}
+.contacts textarea{
+  margin-top: 18px;
+  width: 100%;
+  height: 80px;
+  padding: 8px 0px 0px 8px;
+  color: #6c6c6c;
+  font-size: 16px;
+  background-color: #efefef;
+}
+.contacts>input{
+  color: white;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: 30px 10px 50px 10px;
+  padding: 8px 15px;
+}
+.map{
+display: flex;
+justify-content: center;
+background-color: #141835;
+}
+/* .map_container{
+  width: 1200px;
+  height: 300px;
+} */
+
+/* .arrow img{
+  width: 50px;
+} */
+footer{
+  text-align: center;
+  height: 80px;
+  background-color: #304e81;
+  color: white;
+  font-size: 16px;
+
+}
+footer>span{
+  line-height: 80px;
+}

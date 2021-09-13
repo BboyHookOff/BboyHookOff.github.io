@@ -3,72 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>VizitOchka</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
       <nav>
-        <div class="logo">
-          Грихан Крючков
-        </div>
-        <div class="menu">
-          <ul>
+        <div class="logo">Грихан Крючков</div>
+        <div class="menu"><ul>
             <li>обо мне</li>
             <li>услуги</li>
             <li>кейсы</li>
             <li>прайс</li>
             <li>отзывы</li>
             <li>контакты</li>
-          </ul>
-        </div>
+          </ul></div>
       </nav>
     </header>
 
     <div class="main">
 
-      <div class="title__container">
-        <h1>Привет<br>я Грихан Крючок</h1>
-        <h4>Начинающий веб-разработчик</h4>
-        <input type="submit" value="обо мне">
-        <input type="submit" value="мои работы">
-      </div>
+        <div class="title__container">
+          <h1>Привет<br>Я Грихан Крючок</h1>
+          <h4>Начинающий веб-разработчик</h4>
+          <input type="submit" value="обо мне">
+          <input type="submit" value="мои работы">
+        </div>
+    </div>
 
       <div class="aboutMe">
-        <h2>ОБО МНЕ<br>____</h2>
+        <h2>ОБО МНЕ</h2>
+        <span>____</span>
          <!--после br это типо полосочка под заголовками -->
-        <img src="" alt="Тут должна быть моя фотка">
+        <img src="img/photo.jpg" alt="Тут должна быть моя фотка">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <input type="submit" value="скачать резюме">
       </div>
 
       <div class="services">
-        <h2>ЧТО Я МОГУ<br>____</h2>
+        <h2>ЧТО Я МОГУ</h2>
+        <span>____</span>
+        <div class="services_container">
         <div class="service">
-          <img src="" alt="иконка">
+          <img src="img/comp_icon.png" alt="иконка">
           <h4>Веб-дизайн</h4>
-          <p>описание описание описание<br>описание описание описание<br>описание описание описание<br></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
         </div>
         <div class="service">
-          <img src="" alt="иконка">
+          <img src="img/tegg_icon.png" alt="иконка">
           <h4>Разработка</h4>
-          <p>описание описание описание<br>описание описание описание<br>описание описание описание<br></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
         </div>
         <div class="service">
-          <img src="" alt="иконка">
+          <img src="img/speed_icon.png" alt="иконка">
           <h4>СЕО-Оптимизация</h4>
-          <p>описание описание описание<br>описание описание описание<br>описание описание описание<br></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
         </div>
         <div class="service">
-          <img src="" alt="иконка">
+          <img src="img/marketing_icon.png" alt="иконка">
           <h4>Маркетинг</h4>
-          <p>описание описание описание<br>описание описание описание<br>описание описание описание<br></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+        </div>
         </div>
       </div>
 
       <div class="cases">
-        <h2>КЕЙСЫ<br>____</h2>
+        <h2>КЕЙСЫ</h2>
+        <span>____</span>
         <div class="case">
-          <img id="case__screen" src="" alt="скрин сайта">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img id="case__screen" src="img/case1.png" alt="скрин сайта">
           <div class="case__description">
             <div class="case__description-left">
               <h3>CLIENT:</h3>
@@ -91,7 +96,7 @@
         <form action="" >
           <h3>ТИП САЙТА</h3>
           <select class="type" name="type">
-            <option disabled selected>Выберите тип</option>
+            <option disabled selected>Выберите пункт...</option>
             <option value="визитка">визитка</option>
             <option value="портал">портал</option>
             <option value="каталог">каталог</option>
@@ -101,7 +106,7 @@
           </select>
           <h3>ДИЗАЙН</h3>
           <select class="design" name="design" >
-            <option disabled selected>Выберите дизайн</option>
+            <option disabled selected>Выберите пункт...</option>
             <option value="классика">классика</option>
             <option value="гранж">гранж</option>
             <option value="минимализм">минимализм</option>
@@ -111,12 +116,12 @@
           </select>
           <h3>АДАПТИВНОСТЬ</h3>
           <select class="adapt" name="adapt">
-            <option disabled selected>Выберите адаптивность</option>
+            <option disabled selected>Выберите пункт...</option>
             <option value="ПК">ПК</option>
             <option value="Мобильные устройства">Мобильные устройства</option>
             <option value="под всё на свете">под всё на свете</option>
           </select>
-          <div class="price__result" style="border-top: 2px solid; margin-top: 10px">
+          <div class="price__result" >
             <div class="deadlock">
               <div class="sroki">Сроки</div>
               <div class="deadlock__result"><b>0</b></div>
@@ -130,35 +135,38 @@
       </div>
 
       <div class="statistics">
-        <h2>НЕМНОГО СТАТИСТИКИ<br>____</h2>
+        <h2>НЕМНОГО СТАТИСТИКИ</h2>
+        <span>____</span>
+        <div class="statistics_container">
         <div class="statistic">
-          <img src="" alt="иконка">
+          <img src="img/smile_icon.png" alt="иконка">
           <h2 class="clients"><b>0</b></h2>
           <span>счастливых клиентов</span>
         </div>
         <div class="statistic">
-          <img src="" alt="иконка">
+          <img src="img/tegg2_icon.png" alt="иконка">
           <h2 class="workHours"><b>МАЛО</b></h2>
           <span>часов работы</span>
         </div>
         <div class="statistic">
-          <img src="" alt="иконка">
+          <img src="img/checked_icon.png" alt="иконка">
           <h2 class="progects"><b>2</b></h2>
           <span>проектов завершено</span>
         </div>
         <div class="statistic">
-          <img src="" alt="иконка">
+          <img src="img/goblet_icon.png" alt="иконка">
           <h2 class="awards"><b>-100</b></h2>
           <span>наград получено</span>
+        </div>
         </div>
       </div>
 
       <form class="reviews">
-        <h2>ОТЗЫВЫ<br>____</h2>
-         <!--после br это типо полосочка под заголовками -->
-        <img id="commentator__photo" src="" alt="Тут должна быть фотка коментатора">
+        <h2>ОТЗЫВЫ</h2>
+        <span>____</span>
+        <img id="commentator__photo" src="img/user_icon.png" alt="Тут должна быть фотка коментатора">
         <p id="comment">Всем привет, я мать Григория. Он показал мне как он создаёт файл индекс точка хтмл и я просто в шоке. Специалист каких поискать надо! Справедливо одобряю.</p>
-        <span id="commentator"><b>Екатерина,</b> родитель специалиста</span>
+        <p id="commentator"><b>Екатерина,</b> родитель специалиста</p>
         <div class="choice__comment">
           <input type="radio" name="comm">
           <input type="radio" name="comm">
@@ -167,21 +175,28 @@
       </form>
 
       <div class="contacts">
-        <h2>МОИ КОНТАКТЫ<br>____</h2>
+        <h2>МОИ КОНТАКТЫ</h2>
+        <span>____</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <div class="contact__info">
           <div class="adress">
-            <img src="" alt="иконка">
+            <img src="img/mapPoint_icon.png" alt="иконка">
+            <div class="contact_text">
             <span>Тула</span>
             <span>Кутузова 34</span>
+            </div>
           </div>
           <div class="mail">
-            <img src="" alt="иконка">
+            <img src="img/letter_icon.png" alt="иконка">
+            <div class="contact_text">
             <span>kakoiTo@mail.ru</span>
+            </div>
           </div>
-          <div class="adress">
-            <img src="" alt="иконка">
+          <div class="phone">
+            <img src="img/phone_icon.png" alt="иконка">
+            <div class="contact_text">
             <span>+7 979 979-79-79</span>
+            </div>
           </div>
         </div>
         <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
@@ -201,13 +216,21 @@
       </div>
 
       <div class="map">
-        <h2>----------------<br>Тут будет плагин с картой<br>----------------</h2>
+        <!-- <div class="map_container"> -->
+          <!-- <div class="arrow">
+            <img src="img/rightArrow.png" alt="">
+          </div> -->
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3ca8a1b2afecb92a0aec8a81d0bf53894eb6dbcc382e08d3263a2fd6dbfe4e2d&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+        <!-- <div class="arrow">
+          <img src="img/leftArrow.png" alt="">
+        </div> -->
+        <!-- </div> -->
       </div>
-    </div>
+
 
     <footer>
       <span>Copyright (c) 2021 Grigory Kryuchkov a.k.a. Yung Mushy a.k.a. Hook.</span>
     </footer>
-    
+
 </body>
 </html>
