@@ -1,39 +1,183 @@
+@keyframes comming {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 100%;
+  }
+}
+@keyframes topShift {
+  from{
+    opacity: 0;
+    margin-top: -80px;
+  }
+  to{
+    opacity: 100%;
+    margin-top: 0;
+  }
+}
+@keyframes titlemove{
+  from{
+    opacity: 0;
+    margin-left: -300px;
+  }
+  to{
+    opacity: 100%;
+    margin-left: 160px;
+  }
+}
+@keyframes icons_animation {
+  0%{
+    transform: rotate(0deg);
+  }
+  3%{
+    transform: rotate(8deg);
+  }
+  6%{
+    transform: rotate(0deg);
+  }
+  9%{
+    transform: rotate(-8deg);
+  }
+  12%{
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotateIcon {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(-360deg);
+  }
+}
+@keyframes loading {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
 body{
   font-family: Franklin Gothic, Arial, sans-serif;
   color: #293b4f;
+}
+.downloadScreen{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #304e81;
+  text-align: center;
+  line-height: 45px;
+  font-size: 30px;
+  padding: 22% 0;
+  color: white;
+  z-index: 100;
+  -webkit-animation: loading 0.8s 2s forwards;
+  -o-animation: loading 0.8s 2s forwards;
+  animation: loading 0.8s 2s forwards;
+}
+.downloadScreen img{
+  margin-bottom: 15px;
+  -webkit-animation: rotateIcon 0.9s 0.5s ease infinite;
+  -o-animation: rotateIcon 0.9s 0.5s ease infinite;
+  animation: rotateIcon 0.9s 0.5s ease infinite;
 }
 nav{
   width: 100%;
   min-height: 60px;
   background: #304e81;
-  padding: 0px 240px;
+  padding: 0px 15%;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  z-index: 50;
+  box-shadow: 0px 0px 10px #000000;
+}
+main{
+  width: 100%;
+  height: 100%;
 }
 .logo{
   color: white;
   font-size: 24px;
-  line-height: 60px;
+  line-height: 30px;
   float: left;
+  margin: auto 0;
+  margin-right: 20px;
+  opacity: 0;
+  -webkit-animation: comming 2s 2.5s ease forwards;
+  -o-animation: comming 2s 2.5s ease forwards;
+  animation: comming 2s 2.5s ease forwards;
+}
+.logo a{
+  display: block;
+  -webkit-transition: transform 0.1s, color 0.2s;
+  -o-transition: transform 0.1s, color 0.2s;
+  transition: transform 0.1s, color 0.2s;
+}
+.logo a:visited{
+  color: white;
 }
 .menu{
-  float: left;
+  margin: auto 0;
 }
 .menu li{
   float: left;
-  line-height: 60px;
-  color: white;
+  line-height: 30px;
   margin-right: 35px;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
+  opacity: 0;
+  -webkit-animation: topShift 0.4s ease forwards;
+  -o-animation: topShift 0.4s ease forwards;
+  animation: topShift 0.4s ease forwards;
 }
-.logo:hover, .menu li:hover{
-  color: blanchedalmond;
-  cursor: default;
+.menu li:nth-child(1){
+  animation-delay: 2.9s;
+}
+.menu li:nth-child(2){
+  animation-delay: 3.3s;
+}
+.menu li:nth-child(3){
+  animation-delay: 3.7s;
+}
+.menu li:nth-child(4){
+  animation-delay: 4.1s;
+}
+.menu li:nth-child(5){
+  animation-delay: 4.5s;
+}
+.menu li:nth-child(6){
+  animation-delay: 4.9s;
+}
+.menu li a{
+  color: white;
+  display: block;
+  -webkit-transition: transform 0.1s, color 0.2s;
+  -o-transition: transform 0.1s, color 0.2s;
+  transition: transform 0.1s, color 0.2s;
+}
+.menu li a:visited{
+  color: white;
+}
+.logo a:hover, .menu li a:hover{
+  color: #e88604;
+  transform: scale(1.05);
+}
+.logo a:active, .menu li a:active{
+
+  transform: scale(0.98);
 }
 .main{
   width: 100%;
-  height: calc(100% - 60px);
+  height: 100%;
+  max-height: 760px;
   background-image: url(../img/bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -42,9 +186,13 @@ nav{
 }
 .title__container{
   float: left;
-  margin: 230px 0px 0px 159px;
+  margin: 18% 0px 0px 8%;
   color: #304e81;
   text-align: center;
+  opacity: 0;
+  -webkit-animation: titlemove 1s 4s ease forwards;
+  -o-animation: titlemove 1s 4s ease forwards;
+  animation: titlemove 1s 4s ease forwards;
 }
 .title__container h1{
   font-size: 60px;
@@ -65,9 +213,16 @@ nav{
   background-color: rgba(158, 158, 158, 0.2);
   margin: 40px 10px 0px 10px;
   padding: 0px 3px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .title__container input:hover{
   background-color: rgba(158, 158, 158, 0.7);
+  transform: scale(1.05);
+}
+.title__container input:active{
+  transform: scale(0.95);
 }
 .aboutMe{
   width: 100%;
@@ -75,22 +230,74 @@ nav{
   color: #79818d;
   text-align: center;
   padding: 6% 20%;
+  position: relative;
 }
-.aboutMe>h2, .services>h2, .cases>h2, .statistics>h2, .reviews>h2, .contacts>h2{
+.aboutMe>h2, .services>h2, .cases>h2, .paralax_content>h2, .reviews>h2, .contacts>h2{
   font-size: 28px;
   color: black;
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
 }
-.aboutMe>span, .services>span, .cases>span, .statistics>span, .reviews>span, .contacts>span{
+.aboutMe>span, .services>span, .cases>span, .paralax_content>span, .reviews>span, .contacts>span{
   display: block;
   font-size: 28px;
   color: #ea7700;
   font-weight: bold;
 }
 .aboutMe img{
-  margin-top: 60px;
   width: 215px;
   border-radius: 50%;
+}
+
+.flip_body{
+  width: 215px;
+  height: 215px;
+  margin: 80px auto 50px auto;
+  position: relative;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  transform-style: preserve-3d;
+}
+.flip_front,.flip__back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flip_front{
+  z-index: 2;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+}
+.flip__back{
+  transform: rotateY(-180deg);
+}
+
+.flip_body:active{
+  transform: rotateY(-180deg);
+}
+.tab{
+  position: absolute;
+    margin-left: 105px;
+    top: 25%;
+    left: 50%;
+}
+.tab_Me{
+    font-size: 20px;
+    opacity: 0.5;
+    display: inline-block;
+    width: 180px;
+}
+.tab img{
+    width: 90px;
+    height: 58px;
+    opacity: 0.15;
+    border-radius: 0;
+    display: block;
 }
 .aboutMe p{
   margin: 20px 0px;
@@ -107,6 +314,16 @@ nav{
   border-radius: 5px;
   background-color: rgba(158, 158, 158, 0.15);
   padding: 0px 3px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.aboutMe input:hover{
+  background-color: rgba(158, 158, 158, 0.35);
+  transform: scale(1.05);
+}
+.aboutMe input:active{
+  transform: scale(0.9);
 }
 .services{
   height: 520px;
@@ -130,6 +347,11 @@ nav{
   font-size: 20px;
   font-weight: bold;
   margin: 18px;
+}
+.service img{
+  -webkit-animation: icons_animation 3.5s  infinite;
+  -o-animation: icons_animation 3.5s  infinite;
+  animation: icons_animation 3.5s  infinite;
 }
 .cases{
   text-align: center;
@@ -176,9 +398,16 @@ nav{
   border-radius: 7px;
   display: block;
   opacity: 0.8;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;:
 }
 .case input:hover {
   opacity: 1;
+  transform: scale(1.05);
+}
+.case input:active {
+  transform: scale(0.95);
 }
 .price{
   padding: 70px 30%;
@@ -218,9 +447,11 @@ nav{
   text-align: center;
   padding: 100px 25%;
   background-image: url(../img/comp2_bg.jpg);
-  background-position: bottom;
+  background-attachment: fixed;
+  background-position: top;
   background-size: 100% auto;
-  box-shadow: inset 0px 0px 10px 20px white;
+  background-repeat: no-repeat;
+  box-shadow: inset 0px 0px 2px 4px white;
 }
 .statistics_container{
   margin-top: 55px;
@@ -233,6 +464,11 @@ nav{
 }
 .statistic span{
   font-size: 16px;
+}
+.statistic img{
+  -webkit-animation: icons_animation 3.5s  infinite;
+  -o-animation: icons_animation 3.5s  infinite;
+  animation: icons_animation 3.5s  infinite;
 }
 .reviews{
   padding: 70px 30%;
@@ -312,6 +548,7 @@ nav{
   color: #6c6c6c;
   font-size: 16px;
 }
+
 .contacts textarea{
   margin-top: 18px;
   width: 100%;
@@ -331,6 +568,17 @@ nav{
   border-radius: 5px;
   margin: 30px 10px 50px 10px;
   padding: 8px 15px;
+  overflow: hidden;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.contacts>input:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+.contacts>input:active{
+  transform: scale(0.95);
 }
 .map{
 display: flex;

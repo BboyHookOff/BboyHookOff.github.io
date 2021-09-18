@@ -8,40 +8,61 @@
 </head>
 <body>
 
+    <div class="downloadScreen">
+      <img src="img/loading.png" alt="">
+      <p>Подождите, идёт загрузочка.<br>Щас будет красиво))</p>
+    </div>
+
     <header>
-      <nav>
-        <div class="logo">Грихан Крючков</div>
+      <nav id="header">
+        <div class="logo"><a href="#main">Грихан Крючков</a></div>
         <div class="menu"><ul>
-            <li>обо мне</li>
-            <li>услуги</li>
-            <li>кейсы</li>
-            <li>прайс</li>
-            <li>отзывы</li>
-            <li>контакты</li>
+
+            <!-- <div style="float:left"> -->
+              <li><a href="#aboutMe">обо мне</a></li>
+            <li><a href="#services">услуги</a></li>
+            <li><a href="#cases">кейсы</a></li>
+          <!-- </div> -->
+            <!-- <div style="float:left"> -->
+              <li><a href="#price">прайс</a></li>
+            <li><a href="#reviews">отзывы</a></li>
+            <li><a href="#contacts">контакты</a></li>
+          <!-- </div> -->
           </ul></div>
       </nav>
     </header>
 
-    <div class="main">
-
+  <main>
+    <section class="main" id="main">
         <div class="title__container">
           <h1>Привет<br>Я Грихан Крючок</h1>
           <h4>Начинающий веб-разработчик</h4>
-          <input type="submit" value="обо мне">
-          <input type="submit" value="мои работы">
+          <input type="button" value="обо мне">
+          <input type="button" value="мои работы">
         </div>
-    </div>
+    </section>
 
-      <div class="aboutMe">
+      <section class="aboutMe" id="aboutMe">
         <h2>ОБО МНЕ</h2>
         <span>____</span>
-         <!--после br это типо полосочка под заголовками -->
-        <img src="img/photo.jpg" alt="Тут должна быть моя фотка">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <input type="submit" value="скачать резюме">
-      </div>
+          <div class="flip_body">
+            <div class="flip_front"><img src="img/photo.jpg" alt="Тут должна быть моя фотка"></div>
+            <div class="flip__back"><img src="img/photo2.jpg" alt="Тут должна быть моя фотка"></div>
+            <!-- <div class="tab">
+              <span class="tab_Me">Нажми на меня :)</span>
+              <img src="img/subtitle_arrow.png" alt="">
+            </div> -->
+          </div>
+          <div class="tab">
+            <span class="tab_Me">Нажми на меня :)</span>
+            <img src="img/subtitle_arrow.png" alt="">
+          </div>
 
-      <div class="services">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <input type="button" value="скачать резюме">
+      </section>
+
+      <section class="services" id="services">
         <h2>ЧТО Я МОГУ</h2>
         <span>____</span>
         <div class="services_container">
@@ -66,9 +87,9 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
         </div>
         </div>
-      </div>
+      </section>
 
-      <div class="cases">
+      <section class="cases" id="cases">
         <h2>КЕЙСЫ</h2>
         <span>____</span>
         <div class="case">
@@ -89,9 +110,9 @@
           </div>
           <input type="submit" value="VISIT LIVE SITE">
         </div>
-      </div>
+      </section>
 
-      <div class="price">
+      <section class="price" id="price">
         <h2>Расчет стоимости</h2>
         <form action="" >
           <h3>ТИП САЙТА</h3>
@@ -132,9 +153,10 @@
             </div>
           </div>
         </form>
-      </div>
+      </section>
 
-      <div class="statistics">
+      <section class="statistics">
+       <div class="paralax_content">
         <h2>НЕМНОГО СТАТИСТИКИ</h2>
         <span>____</span>
         <div class="statistics_container">
@@ -159,22 +181,18 @@
           <span>наград получено</span>
         </div>
         </div>
-      </div>
+       </div>
+      </section>
 
-      <form class="reviews">
+      <div class="reviews" id="reviews">
         <h2>ОТЗЫВЫ</h2>
         <span>____</span>
         <img id="commentator__photo" src="img/user_icon.png" alt="Тут должна быть фотка коментатора">
         <p id="comment">Всем привет, я мать Григория. Он показал мне как он создаёт файл индекс точка хтмл и я просто в шоке. Специалист каких поискать надо! Справедливо одобряю.</p>
         <p id="commentator"><b>Екатерина,</b> родитель специалиста</p>
-        <div class="choice__comment">
-          <input type="radio" name="comm">
-          <input type="radio" name="comm">
-          <input type="radio" name="comm">
-        </div>
-      </form>
+      </div>
 
-      <div class="contacts">
+      <section class="contacts" id="contacts">
         <h2>МОИ КОНТАКТЫ</h2>
         <span>____</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -202,10 +220,10 @@
         <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
         <form class="gimme_a_message" action="index.html">
           <div class="guest">
-            <input type="text" name="name" value="имя">
-            <input type="text" name="Email" value="Email">
+            <input type="text" name="name" placeholder="имя">
+            <input type="text" name="Email" placeholder="Email">
           </div>
-          <textarea name="message" id="readIt" rows="8" cols="80">Сообщение</textarea>
+          <textarea name="message" id="readIt" rows="8" cols="80" placeholder="Ваше сообщение"></textarea>
         </form>
         <input type="submit" name="sendIt" value="Отправить">
         <div class="myLinks">
@@ -213,9 +231,9 @@
           <a href="#" target="_blank"><img src="" alt="ссылка на инсту"></a>
           <a href="#" target="_blank"><img src="" alt="ссылка на что-то ещё"></a>
         </div>
-      </div>
+      </section>
 
-      <div class="map">
+      <section class="map">
         <!-- <div class="map_container"> -->
           <!-- <div class="arrow">
             <img src="img/rightArrow.png" alt="">
@@ -225,12 +243,13 @@
           <img src="img/leftArrow.png" alt="">
         </div> -->
         <!-- </div> -->
-      </div>
+      </section>
 
+      <footer>
+        <span>Copyright (c) 2021 Grigory Kryuchkov a.k.a. Yung Mushy a.k.a. Hook.</span>
+      </footer>
 
-    <footer>
-      <span>Copyright (c) 2021 Grigory Kryuchkov a.k.a. Yung Mushy a.k.a. Hook.</span>
-    </footer>
+  </main>
 
 </body>
 </html>
