@@ -1,0 +1,73 @@
+@keyframes comming {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 100%;
+  }
+}
+@keyframes topShift {
+  from{
+    opacity: 0;
+    margin-top: -80px;
+  }
+  to{
+    opacity: 100%;
+    margin-top: 0;
+  }
+}
+@keyframes titlemove{
+  from{
+    opacity: 0;
+    margin-left: -300px;
+  }
+  to{
+    opacity: 100%;
+    margin-left: 0;
+  }
+}
+@keyframes titlemove-lg{
+  from{
+    opacity: 0;
+    margin-bottom: -300px;
+  }
+  to{
+    opacity: 100%;
+    margin-bottom: 0;
+  }
+}
+@keyframes icons_animation {
+  0%{
+    transform: rotate(0deg);
+  }
+  3%{
+    transform: rotate(8deg);
+  }
+  6%{
+    transform: rotate(0deg);
+  }
+  9%{
+    transform: rotate(-8deg);
+  }
+  12%{
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotateIcon {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(-360deg);
+  }
+}
+@keyframes loading {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
