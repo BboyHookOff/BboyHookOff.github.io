@@ -5,6 +5,18 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/Calibri.eot');
+    src: url('../fonts/Calibri.woff2') format('woff2'),
+         url('../fonts/Calibri.woff') format('woff'),
+         url('../fonts/Calibri.ttf') format('truetype'),
+         url('../fonts/Calibri.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 body{
   font-family: 'FranklinGot';
@@ -314,6 +326,8 @@ main{
 .aboutMe p{
   font-size: 18px;
   color: #37475a;
+	font-family: 'Calibri';
+	font-weight: bold;
 }
 .aboutMe input{
   color: #6f7180;
@@ -364,9 +378,14 @@ margin-bottom: 70px;
 	    max-width: 340px;
     margin-bottom: 5px;
 }
+.service p{
+	font-family: 'Calibri';
+	font-weight: bold;
+}
 .service h4{
   color: #e97700;
   font-size: 20px;
+	font-family: 'Calibri';
   font-weight: bold;
 }
 .service img{
@@ -383,6 +402,10 @@ margin-bottom: 70px;
 	min-height: 100%;
 	text-align: center;
 	padding: 60px 0 40px 0;
+}
+.cases p, span{
+	font-family: 'Calibri';
+	font-weight: bold;
 }
 .cases-h{
 	width: 100%;
@@ -419,6 +442,7 @@ margin-bottom: 70px;
 }
 .case__description-right{
   min-width: 70%;
+	padding-left: 5px;
 }
 .case_btn{
 	padding: 0 6%;
@@ -457,8 +481,15 @@ margin-bottom: 70px;
   text-align: center;
   color: #102031;
 }
+.price_box{
+	width: 50% !important;
+	max-width: 970px;
+    z-index: 10;
+    box-shadow: 0px 0px 4px 0px #000000ab;
+    padding: 5px 15px 40px 15px;
+}
 .price form{
-	width: 50%;
+	width: 95%;
 }
 hr{
 	border: 0;
@@ -573,8 +604,13 @@ hr{
  }
  .reviews p{
    margin: 40px 0px 30px 0px;
+	 font-family: 'Calibri';
+	 font-weight: bold;
  }
-
+	.reviews b{
+		color: black;
+		font-size: 17px;
+	}
 
 /* ------------------------------------------------ */
 
@@ -583,7 +619,7 @@ hr{
   padding: 70px 25% 50px 25%;
   font-size: 16px;
   background-image: url(../img/comp3_bg.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-position: bottom;
 }
 
@@ -596,6 +632,8 @@ hr{
 .contacts p{
   margin-top: 18px;
   color: white;
+	font-family: 'Calibri';
+	font-weight: bold;
 }
 .contacts a{
   color: white;
@@ -609,6 +647,8 @@ hr{
 }
 .contact__info img, span{
   display: block;
+	font-family: 'Calibri';
+	font-weight: bold;
 }
 
 .contact_text{
@@ -703,7 +743,7 @@ footer{
   background-color: #304e81;
   color: white;
   font-size: 16px;
-
+	font-family: Arial;
 }
 footer p{
 	margin: 0 !important;

@@ -67,8 +67,8 @@
 	}
 }
 @media (max-width:768px) {
-	.price form{
-		width: 70%;
+	.price_box{
+		width: 70% !important;
 	}
 	.statistic h2{
 		padding: 5px !important;
@@ -86,6 +86,9 @@
 	}
 }
 @media (max-width:576px){
+	.price_box{
+		width: 95% !important;
+	}
 	.guest, .contacts textarea{
 		width: 85%;
 	}
