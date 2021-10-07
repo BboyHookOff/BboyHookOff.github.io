@@ -73,8 +73,8 @@
         </div>
         <div class="aboutMe-b">
           <div class="flip_body">
-            <div class="flip_front"><img src="img/photo.jpg" alt="Тут должна быть моя фотка"></div>
-            <div class="flip__back"><img src="img/photo2.jpg" alt="Тут должна быть моя фотка"></div>
+            <div class="flip_front"><img src="img/photo.jpg" alt="Тут должна быть моя фотка" style="pointer-events: none;"></div>
+            <div class="flip__back"><img src="img/photo2.jpg" alt="Тут должна быть моя фотка" style="pointer-events: none;"></div>
           </div>
           <div class="tab">
             <span class="tab_Me">Нажми на меня :)</span>
@@ -133,7 +133,7 @@
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="img/case1.png"class="d-block w-100" alt="...">
+                  <img src="img/case1.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
                   <img src="img/case2.png" class="d-block w-100" alt="...">
@@ -176,7 +176,7 @@
               <h2>Расчет стоимости</h2>
             <h3>ТИП САЙТА</h3>
             <div class="mb-3">
-              <select class="form-select" required aria-label="select example">
+              <select id="saitType" class="form-select" required aria-label="select example">
                 <option disabled selected>Выберите пункт...</option>
                 <option value="визитка">визитка</option>
                 <option value="портал">портал</option>
@@ -188,7 +188,7 @@
             </div>
             <h3>ДИЗАЙН</h3>
             <div class="mb-3">
-              <select class="form-select" required aria-label="select example">
+              <select id="saitDesign" class="form-select" required aria-label="select example">
                   <option disabled selected>Выберите пункт...</option>
                   <option value="классика">классика</option>
                   <option value="гранж">гранж</option>
@@ -200,7 +200,7 @@
             </div>
             <h3>АДАПТИВНОСТЬ</h3>
             <div class="mb-3">
-              <select class="form-select" required aria-label="select example">
+              <select id="saitAdapt" class="form-select" required aria-label="select example">
               <option disabled selected>Выберите пункт...</option>
               <option value="ПК">ПК</option>
               <option value="Мобильные устройства">Мобильные устройства</option>
@@ -211,14 +211,15 @@
             <div class="price__result" >
               <div class="deadlock">
                 <div class="sroki">Сроки</div>
-                <div class="deadlock__result"><b>0</b></div>
+                <div class="deadlock__result"><b id="worktime">0</b></div>
               </div>
               <div class="webcost">
                 <div class="stoimost">Стоимость</div>
-                <div class="webcost__result"><b>0</b></div>
+                <div class="webcost__result"><b id="webcost">0</b></div>
               </div>
             </div>
             <div class="case_btn row w-100 d-flex justify-content-center">
+              <p>Выберете все пункты, чтобы узнать примерную стоимость вашего проекта. Конечная цена обговаривается лично.</p>
               <input type="button" value="Оставить заявку">
             </div>
           </form>
@@ -326,6 +327,7 @@
       </footer>
 
     </main>
+    <script type="text/javascript" src="js/script.js"></script>
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </body>
